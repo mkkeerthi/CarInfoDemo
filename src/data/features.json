@@ -1,0 +1,44 @@
+[
+  {
+    "id": "comfort",
+    "label": "Comfort & Convenience",
+    "features": [
+      { "id": "seating", "label": "Seating", "children": [
+        { "id": "seat-type", "label": "Ventilated Seats" },
+        { "id": "seat-adjust", "label": "Power Adjust" }
+      ] },
+      { "id": "climate", "label": "Climate Control", "children": [
+        { "id": "ac-auto", "label": "Automatic AC" },
+        { "id": "ac-rear", "label": "Rear AC Vents" }
+      ] }
+    ]
+  },
+  {
+    "id": "safety",
+    "label": "Safety",
+    "features": [
+      { "id": "airbags", "label": "Airbags", "children": [
+        { "id": "airbags-6", "label": "6 Airbags" },
+        { "id": "airbags-front", "label": "Front Airbags" }
+      ] },
+      { "id": "adas", "label": "ADAS", "children": [
+        { "id": "adas-aeb", "label": "Auto Emergency Braking" },
+        { "id": "adas-lka", "label": "Lane Keep Assist" }
+      ] }
+    ]
+  },
+  {
+    "id": "infotainment",
+    "label": "Infotainment",
+    "features": [
+      { "id": "display", "label": "Touchscreen Display", "children": [
+        { "id": "display-7", "label": "7-inch" },
+        { "id": "display-10", "label": "10.25-inch" }
+      ] },
+      { "id": "audio", "label": "Audio System", "children": [
+        { "id": "audio-bose", "label": "Bose" },
+        { "id": "audio-sony", "label": "Sony" }
+      ] }
+    ]
+  }
+]

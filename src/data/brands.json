@@ -1,0 +1,8 @@
+[
+  { "id": "maruti", "name": "Maruti Suzuki", "origin": "India", "logoText": "MS" },
+  { "id": "hyundai", "name": "Hyundai", "origin": "South Korea", "logoText": "HY" },
+  { "id": "tata", "name": "Tata", "origin": "India", "logoText": "TA" },
+  { "id": "mahindra", "name": "Mahindra", "origin": "India", "logoText": "MA" },
+  { "id": "honda", "name": "Honda", "origin": "Japan", "logoText": "HO" },
+  { "id": "toyota", "name": "Toyota", "origin": "Japan", "logoText": "TO" }
+]
