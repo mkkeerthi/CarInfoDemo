@@ -1,0 +1,5 @@
+name,company,email
+Alice Smith,Acme Corp,alice@acme.test
+Bob Jones,Globex,bob@globex.test
+Carol Danvers,Starforce,carol@starforce.test
+Henry Blob,Circle-H,henry@circleh.test

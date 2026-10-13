@@ -1,0 +1,1 @@
+This file is offered by the UI Elements > File Download example so a download can be verified end to end.
