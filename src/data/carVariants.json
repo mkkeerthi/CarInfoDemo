@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "modelId": 1,
+    "trimName": "ZXi Plus",
+    "priceLakh": 8.5,
+    "fuelType": "Petrol",
+    "transmission": "Manual",
+    "seats": 5,
+    "engineCc": 1197,
+    "powerBhp": 89,
+    "mileageKmpl": 22.4
+  },
+  {
+    "id": 2,
+    "modelId": 2,
+    "trimName": "ZDi",
+    "priceLakh": 12.1,
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "seats": 5,
+    "engineCc": 1462,
+    "powerBhp": 103,
+    "mileageKmpl": 19.8
+  },
+  {
+    "id": 3,
+    "modelId": 3,
+    "trimName": "SX(O)",
+    "priceLakh": 19.2,
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "seats": 5,
+    "engineCc": 1493,
+    "powerBhp": 114,
+    "mileageKmpl": 21.0
+  },
+  {
+    "id": 4,
+    "modelId": 4,
+    "trimName": "Fearless Plus",
+    "priceLakh": 14.5,
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "seats": 5,
+    "engineCc": 0,
+    "powerBhp": 143,
+    "mileageKmpl": 0
+  },
+  {
+    "id": 5,
+    "modelId": 5,
+    "trimName": "Accomplished",
+    "priceLakh": 8.9,
+    "fuelType": "CNG",
+    "transmission": "Manual",
+    "seats": 5,
+    "engineCc": 1199,
+    "powerBhp": 85,
+    "mileageKmpl": 26.2
+  },
+  {
+    "id": 6,
+    "modelId": 6,
+    "trimName": "AX7 Luxury",
+    "priceLakh": 24.9,
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "seats": 7,
+    "engineCc": 2184,
+    "powerBhp": 182,
+    "mileageKmpl": 17.0
+  },
+  {
+    "id": 7,
+    "modelId": 7,
+    "trimName": "ZX",
+    "priceLakh": 16.0,
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "seats": 5,
+    "engineCc": 1498,
+    "powerBhp": 121,
+    "mileageKmpl": 17.8
+  },
+  {
+    "id": 8,
+    "modelId": 8,
+    "trimName": "ZX(O)",
+    "priceLakh": 30.9,
+    "fuelType": "Hybrid",
+    "transmission": "Automatic",
+    "seats": 7,
+    "engineCc": 1987,
+    "powerBhp": 183,
+    "mileageKmpl": 23.2
+  }
+]

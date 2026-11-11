@@ -1,13 +1,28 @@
 import { useState } from 'react';
-import cars from '../data/cars.json';
+import { useCatalog } from '../data';
 
 export default function ComparePage() {
-  const [selected, setSelected] = useState<string[]>([cars[0].id, cars[1].id]);
+  const { cars, loading, error } = useCatalog();
+  const [picked, setPicked] = useState<number[] | null>(null);
 
-  const toggle = (id: string) =>
-    setSelected((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : prev.length < 3 ? [...prev, id] : prev
-    );
+  if (loading) {
+    return <p id="catalog-loading" className="text-sm text-neutral-400">Loading cars…</p>;
+  }
+  if (error) {
+    return <p id="catalog-error" className="text-sm text-red-400">Failed to load cars: {error}</p>;
+  }
+
+  const selected = picked ?? cars.slice(0, 2).map((car) => car.id);
+
+  const toggle = (id: number) =>
+    setPicked((prev) => {
+      const current = prev ?? cars.slice(0, 2).map((car) => car.id);
+      return current.includes(id)
+        ? current.filter((x) => x !== id)
+        : current.length < 3
+          ? [...current, id]
+          : current;
+    });
 
   const selectedCars = cars.filter((c) => selected.includes(c.id));
 

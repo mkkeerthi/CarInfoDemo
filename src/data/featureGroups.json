@@ -1,0 +1,6 @@
+[
+  { "id": 1, "label": "Comfort & Convenience", "sortOrder": 1 },
+  { "id": 2, "label": "Safety", "sortOrder": 2 },
+  { "id": 3, "label": "Infotainment", "sortOrder": 3 },
+  { "id": 4, "label": "Other Features", "sortOrder": 4 }
+]

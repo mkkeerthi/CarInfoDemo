@@ -1,19 +1,24 @@
 import { useState } from 'react';
 import CarTable from '../components/ui/CarTable';
-import cars from '../data/cars.json';
-import type { Car } from '../types/car';
-
-const carData = cars as Car[];
+import { useCatalog } from '../data';
 
 const fuelTypes = ['Petrol', 'Diesel', 'CNG', 'Electric', 'Hybrid'] as const;
 const bodyTypes = ['Hatchback', 'Sedan', 'SUV', 'MUV'] as const;
 
 export default function CarsListPage() {
+  const { cars, loading, error } = useCatalog();
   const [search, setSearch] = useState('');
   const [fuel, setFuel] = useState('All');
   const [selectedBodies, setSelectedBodies] = useState<string[]>([]);
 
-  const filtered = carData.filter((car) => {
+  if (loading) {
+    return <p id="catalog-loading" className="text-sm text-neutral-400">Loading cars…</p>;
+  }
+  if (error) {
+    return <p id="catalog-error" className="text-sm text-red-400">Failed to load cars: {error}</p>;
+  }
+
+  const filtered = cars.filter((car) => {
     const matchesSearch =
       `${car.make} ${car.model} ${car.variant}`.toLowerCase().includes(search.toLowerCase());
     const matchesFuel = fuel === 'All' || car.fuelType === fuel;

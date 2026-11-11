@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "brandId": 1,
+    "name": "Swift",
+    "bodyType": "Hatchback",
+    "safetyRating": 4,
+    "colors": "Pearl White, Midnight Blue, Magma Grey"
+  },
+  {
+    "id": 2,
+    "brandId": 1,
+    "name": "Brezza",
+    "bodyType": "SUV",
+    "safetyRating": 4,
+    "colors": "Sizzling Red, Brave Khaki, Pearl White"
+  },
+  {
+    "id": 3,
+    "brandId": 2,
+    "name": "Creta",
+    "bodyType": "SUV",
+    "safetyRating": 5,
+    "colors": "Fiery Red, Atlas White, Abyss Black"
+  },
+  {
+    "id": 4,
+    "brandId": 3,
+    "name": "Nexon",
+    "bodyType": "SUV",
+    "safetyRating": 5,
+    "colors": "Empowered Oxide, Flame Red, Daytona Grey"
+  },
+  {
+    "id": 5,
+    "brandId": 3,
+    "name": "Punch",
+    "bodyType": "Hatchback",
+    "safetyRating": 5,
+    "colors": "Tropical Mist, Calypso Red, Orcus White"
+  },
+  {
+    "id": 6,
+    "brandId": 4,
+    "name": "XUV700",
+    "bodyType": "SUV",
+    "safetyRating": 5,
+    "colors": "Electric Blue, Midnight Black, Red Rage"
+  },
+  {
+    "id": 7,
+    "brandId": 5,
+    "name": "City",
+    "bodyType": "Sedan",
+    "safetyRating": 5,
+    "colors": "Obsidian Blue, Radiant Red, Platinum White"
+  },
+  {
+    "id": 8,
+    "brandId": 6,
+    "name": "Innova Hycross",
+    "bodyType": "MUV",
+    "safetyRating": 5,
+    "colors": "Platinum White Pearl, Attitude Black, Silver Metallic"
+  }
+]

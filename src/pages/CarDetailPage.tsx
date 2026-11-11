@@ -3,12 +3,19 @@ import Collapser from '../components/ui/Collapser';
 import Expander from '../components/ui/Expander';
 import Tooltip from '../components/ui/Tooltip';
 import TreeView from '../components/ui/TreeView';
-import cars from '../data/cars.json';
-import features from '../data/features.json';
+import { useCatalog } from '../data';
 
 export default function CarDetailPage() {
+  const { getCarById, featureGroups, loading, error } = useCatalog();
   const { id } = useParams<{ id: string }>();
-  const car = cars.find((c) => c.id === id);
+  const car = getCarById(id ?? '');
+
+  if (loading) {
+    return <p id="catalog-loading" className="text-sm text-neutral-400">Loading cars…</p>;
+  }
+  if (error) {
+    return <p id="catalog-error" className="text-sm text-red-400">Failed to load cars: {error}</p>;
+  }
 
   if (!car) {
     return (
@@ -63,7 +70,7 @@ export default function CarDetailPage() {
 
         <section id="car-features-tree" aria-label="Feature tree">
           <h2 className="mb-3 text-xl font-semibold">Feature Tree</h2>
-          <TreeView id="feature-tree" groups={features} />
+          <TreeView id="feature-tree" groups={featureGroups} />
         </section>
       </div>
 
@@ -90,7 +97,7 @@ export default function CarDetailPage() {
         </Expander>
         <Collapser id="note-collapser" title="Booking Note (collapsible)">
           <p id="booking-note" className="text-sm text-neutral-300">
-            This is a dummy demo car entry. Prices and specifications are illustrative and loaded from local JSON.
+            This is a dummy demo car entry. Prices and specifications are illustrative and loaded from the car catalog.
           </p>
         </Collapser>
       </section>

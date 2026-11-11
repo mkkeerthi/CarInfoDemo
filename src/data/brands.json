@@ -1,8 +1,8 @@
 [
-  { "id": "maruti", "name": "Maruti Suzuki", "origin": "India", "logoText": "MS" },
-  { "id": "hyundai", "name": "Hyundai", "origin": "South Korea", "logoText": "HY" },
-  { "id": "tata", "name": "Tata", "origin": "India", "logoText": "TA" },
-  { "id": "mahindra", "name": "Mahindra", "origin": "India", "logoText": "MA" },
-  { "id": "honda", "name": "Honda", "origin": "Japan", "logoText": "HO" },
-  { "id": "toyota", "name": "Toyota", "origin": "Japan", "logoText": "TO" }
+  { "id": 1, "name": "Maruti Suzuki", "origin": "India", "logoText": "MS" },
+  { "id": 2, "name": "Hyundai", "origin": "South Korea", "logoText": "HY" },
+  { "id": 3, "name": "Tata", "origin": "India", "logoText": "TA" },
+  { "id": 4, "name": "Mahindra", "origin": "India", "logoText": "MA" },
+  { "id": 5, "name": "Honda", "origin": "Japan", "logoText": "HO" },
+  { "id": 6, "name": "Toyota", "origin": "Japan", "logoText": "TO" }
 ]

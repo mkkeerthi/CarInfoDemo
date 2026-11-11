@@ -2,21 +2,24 @@ import { Link } from 'react-router-dom';
 import Banner from '../components/layout/Banner';
 import CarListView from '../components/ui/CarListView';
 import Tooltip from '../components/ui/Tooltip';
-import cars from '../data/cars.json';
-import brands from '../data/brands.json';
-import type { Car, Brand } from '../types/car';
-
-const carData = cars as Car[];
-const brandData = brands as Brand[];
+import { useCatalog } from '../data';
 
 export default function HomePage() {
-  const topCars = carData.slice(0, 4);
+  const { brands, getTopCars, loading, error } = useCatalog();
+  const topCars = getTopCars(4);
+
+  if (loading) {
+    return <p id="catalog-loading" className="text-sm text-neutral-400">Loading cars…</p>;
+  }
+  if (error) {
+    return <p id="catalog-error" className="text-sm text-red-400">Failed to load cars: {error}</p>;
+  }
 
   return (
     <div className="space-y-10">
       <Banner
         title="Explore Cars Sold in India"
-        subtitle="Makes, models, specifications and dummy pricing — all loaded from local JSON data."
+        subtitle="Makes, models, specifications and dummy pricing — loaded from the car catalog."
       />
 
       <section id="home-image-section" aria-label="Sample image">
@@ -32,7 +35,7 @@ export default function HomePage() {
       <section id="home-brands" aria-label="Brands">
         <h2 className="mb-4 text-xl font-semibold">Popular Brands</h2>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-          {brandData.map((brand) => (
+          {brands.map((brand) => (
             <Tooltip key={brand.id} id={`brand-tooltip-${brand.id}`} text={`${brand.name} — Origin: ${brand.origin}`}>
               <div
                 id={`brand-card-${brand.id}`}

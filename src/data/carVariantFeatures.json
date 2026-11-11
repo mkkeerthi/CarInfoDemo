@@ -1,0 +1,41 @@
+[
+  { "id": 1, "variantId": 1, "featureId": 8, "isStandard": true },
+  { "id": 2, "variantId": 1, "featureId": 19, "isStandard": true },
+  { "id": 3, "variantId": 1, "featureId": 20, "isStandard": true },
+  { "id": 4, "variantId": 1, "featureId": 21, "isStandard": true },
+
+  { "id": 5, "variantId": 2, "featureId": 22, "isStandard": true },
+  { "id": 6, "variantId": 2, "featureId": 23, "isStandard": true },
+  { "id": 7, "variantId": 2, "featureId": 24, "isStandard": true },
+  { "id": 8, "variantId": 2, "featureId": 25, "isStandard": true },
+
+  { "id": 9, "variantId": 3, "featureId": 26, "isStandard": true },
+  { "id": 10, "variantId": 3, "featureId": 2, "isStandard": true },
+  { "id": 11, "variantId": 3, "featureId": 17, "isStandard": true },
+  { "id": 12, "variantId": 3, "featureId": 27, "isStandard": true },
+
+  { "id": 13, "variantId": 4, "featureId": 28, "isStandard": true },
+  { "id": 14, "variantId": 4, "featureId": 29, "isStandard": true },
+  { "id": 15, "variantId": 4, "featureId": 30, "isStandard": true },
+  { "id": 16, "variantId": 4, "featureId": 31, "isStandard": true },
+
+  { "id": 17, "variantId": 5, "featureId": 32, "isStandard": true },
+  { "id": 18, "variantId": 5, "featureId": 33, "isStandard": true },
+  { "id": 19, "variantId": 5, "featureId": 34, "isStandard": true },
+  { "id": 20, "variantId": 5, "featureId": 35, "isStandard": true },
+
+  { "id": 21, "variantId": 6, "featureId": 36, "isStandard": true },
+  { "id": 22, "variantId": 6, "featureId": 18, "isStandard": true },
+  { "id": 23, "variantId": 6, "featureId": 10, "isStandard": true },
+  { "id": 24, "variantId": 6, "featureId": 37, "isStandard": true },
+
+  { "id": 25, "variantId": 7, "featureId": 38, "isStandard": true },
+  { "id": 26, "variantId": 7, "featureId": 39, "isStandard": true },
+  { "id": 27, "variantId": 7, "featureId": 40, "isStandard": true },
+  { "id": 28, "variantId": 7, "featureId": 22, "isStandard": true },
+
+  { "id": 29, "variantId": 8, "featureId": 41, "isStandard": true },
+  { "id": 30, "variantId": 8, "featureId": 42, "isStandard": true },
+  { "id": 31, "variantId": 8, "featureId": 2, "isStandard": true },
+  { "id": 32, "variantId": 8, "featureId": 26, "isStandard": true }
+]

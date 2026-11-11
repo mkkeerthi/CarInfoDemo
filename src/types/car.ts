@@ -1,12 +1,16 @@
+export type BodyType = 'Hatchback' | 'Sedan' | 'SUV' | 'MUV';
+export type FuelType = 'Petrol' | 'Diesel' | 'CNG' | 'Electric' | 'Hybrid';
+export type Transmission = 'Manual' | 'Automatic';
+
 export interface Car {
-  id: string;
+  id: number;
   make: string;
   model: string;
   variant: string;
   priceLakh: number;
-  fuelType: 'Petrol' | 'Diesel' | 'CNG' | 'Electric' | 'Hybrid';
-  transmission: 'Manual' | 'Automatic';
-  bodyType: 'Hatchback' | 'Sedan' | 'SUV' | 'MUV';
+  fuelType: FuelType;
+  transmission: Transmission;
+  bodyType: BodyType;
   seats: number;
   engineCC: number;
   powerBhp: number;
@@ -17,27 +21,20 @@ export interface Car {
 }
 
 export interface Brand {
-  id: string;
+  id: number;
   name: string;
   origin: string;
   logoText: string;
 }
 
-export interface CarCategory {
-  id: string;
-  name: string;
-  description: string;
-  bodyTypes: string[];
-}
-
 export interface FeatureGroup {
-  id: string;
+  id: number;
   label: string;
   features: FeatureNode[];
 }
 
 export interface FeatureNode {
-  id: string;
+  id: number;
   label: string;
   children?: FeatureNode[];
 }

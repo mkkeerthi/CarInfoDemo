@@ -1,44 +1,47 @@
 [
-  {
-    "id": "comfort",
-    "label": "Comfort & Convenience",
-    "features": [
-      { "id": "seating", "label": "Seating", "children": [
-        { "id": "seat-type", "label": "Ventilated Seats" },
-        { "id": "seat-adjust", "label": "Power Adjust" }
-      ] },
-      { "id": "climate", "label": "Climate Control", "children": [
-        { "id": "ac-auto", "label": "Automatic AC" },
-        { "id": "ac-rear", "label": "Rear AC Vents" }
-      ] }
-    ]
-  },
-  {
-    "id": "safety",
-    "label": "Safety",
-    "features": [
-      { "id": "airbags", "label": "Airbags", "children": [
-        { "id": "airbags-6", "label": "6 Airbags" },
-        { "id": "airbags-front", "label": "Front Airbags" }
-      ] },
-      { "id": "adas", "label": "ADAS", "children": [
-        { "id": "adas-aeb", "label": "Auto Emergency Braking" },
-        { "id": "adas-lka", "label": "Lane Keep Assist" }
-      ] }
-    ]
-  },
-  {
-    "id": "infotainment",
-    "label": "Infotainment",
-    "features": [
-      { "id": "display", "label": "Touchscreen Display", "children": [
-        { "id": "display-7", "label": "7-inch" },
-        { "id": "display-10", "label": "10.25-inch" }
-      ] },
-      { "id": "audio", "label": "Audio System", "children": [
-        { "id": "audio-bose", "label": "Bose" },
-        { "id": "audio-sony", "label": "Sony" }
-      ] }
-    ]
-  }
+  { "id": 1, "groupId": 1, "label": "Seating", "sortOrder": 1 },
+  { "id": 2, "groupId": 1, "label": "Ventilated Seats", "sortOrder": 2 },
+  { "id": 3, "groupId": 1, "label": "Power Adjust", "sortOrder": 3 },
+  { "id": 4, "groupId": 1, "label": "Climate Control", "sortOrder": 4 },
+  { "id": 5, "groupId": 1, "label": "Automatic AC", "sortOrder": 5 },
+  { "id": 6, "groupId": 1, "label": "Rear AC Vents", "sortOrder": 6 },
+
+  { "id": 7, "groupId": 2, "label": "Airbags", "sortOrder": 1 },
+  { "id": 8, "groupId": 2, "label": "6 Airbags", "sortOrder": 2 },
+  { "id": 9, "groupId": 2, "label": "Front Airbags", "sortOrder": 3 },
+  { "id": 10, "groupId": 2, "label": "ADAS", "sortOrder": 4 },
+  { "id": 11, "groupId": 2, "label": "Auto Emergency Braking", "sortOrder": 5 },
+  { "id": 12, "groupId": 2, "label": "Lane Keep Assist", "sortOrder": 6 },
+
+  { "id": 13, "groupId": 3, "label": "Touchscreen Display", "sortOrder": 1 },
+  { "id": 14, "groupId": 3, "label": "7-inch", "sortOrder": 2 },
+  { "id": 15, "groupId": 3, "label": "10.25-inch", "sortOrder": 3 },
+  { "id": 16, "groupId": 3, "label": "Audio System", "sortOrder": 4 },
+  { "id": 17, "groupId": 3, "label": "Bose", "sortOrder": 5 },
+  { "id": 18, "groupId": 3, "label": "Sony", "sortOrder": 6 },
+
+  { "id": 19, "groupId": 4, "label": "Touchscreen Infotainment", "sortOrder": 1 },
+  { "id": 20, "groupId": 4, "label": "Cruise Control", "sortOrder": 2 },
+  { "id": 21, "groupId": 4, "label": "Rear Camera", "sortOrder": 3 },
+  { "id": 22, "groupId": 4, "label": "Sunroof", "sortOrder": 4 },
+  { "id": 23, "groupId": 4, "label": "Heads-up Display", "sortOrder": 5 },
+  { "id": 24, "groupId": 4, "label": "360 Camera", "sortOrder": 6 },
+  { "id": 25, "groupId": 4, "label": "Paddle Shifters", "sortOrder": 7 },
+  { "id": 26, "groupId": 4, "label": "Panoramic Sunroof", "sortOrder": 8 },
+  { "id": 27, "groupId": 4, "label": "ADAS Level 2", "sortOrder": 9 },
+  { "id": 28, "groupId": 4, "label": "12.3-inch Touchscreen", "sortOrder": 10 },
+  { "id": 29, "groupId": 4, "label": "Wireless Charger", "sortOrder": 11 },
+  { "id": 30, "groupId": 4, "label": "Regenerative Braking", "sortOrder": 12 },
+  { "id": 31, "groupId": 4, "label": "Connected Car Tech", "sortOrder": 13 },
+  { "id": 32, "groupId": 4, "label": "7-inch Infotainment", "sortOrder": 14 },
+  { "id": 33, "groupId": 4, "label": "Auto Headlamps", "sortOrder": 15 },
+  { "id": 34, "groupId": 4, "label": "Rain Sensing Wipers", "sortOrder": 16 },
+  { "id": 35, "groupId": 4, "label": "Traction Pro Mode", "sortOrder": 17 },
+  { "id": 36, "groupId": 4, "label": "Dual 10.25-inch Screens", "sortOrder": 18 },
+  { "id": 37, "groupId": 4, "label": "Skyroof", "sortOrder": 19 },
+  { "id": 38, "groupId": 4, "label": "Honda Sensing ADAS", "sortOrder": 20 },
+  { "id": 39, "groupId": 4, "label": "Leather Seats", "sortOrder": 21 },
+  { "id": 40, "groupId": 4, "label": "LaneWatch Camera", "sortOrder": 22 },
+  { "id": 41, "groupId": 4, "label": "Ottoman Seats", "sortOrder": 23 },
+  { "id": 42, "groupId": 4, "label": "Powered Tailgate", "sortOrder": 24 }
 ]
